@@ -13,12 +13,26 @@
         </p>
       </template>
       <template v-slot:col2>
-        <img
-          src="@/assets/beautiful-young-female-doctor-looking-camera-office-cropped.png"
-          alt="young female doctor"
-          height="500"
-          class="mt-5"
-        />
+        <picture>
+          <source
+            srcset="
+              @/assets/webp/beautiful-young-female-doctor-looking-camera-office-cropped.webp
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              @/assets/beautiful-young-female-doctor-looking-camera-office-cropped.png
+            "
+            type="image/png"
+          />
+          <img
+            src="@/assets/beautiful-young-female-doctor-looking-camera-office-cropped.png"
+            alt="young female doctor"
+            height="500"
+            class="mt-5"
+          />
+        </picture>
       </template>
     </Section>
     <Section
@@ -45,12 +59,22 @@
         </p>
       </template>
       <template v-slot:col2>
-        <img
-          src="@/assets/medium-shot-doctor-holding-tablet.png"
-          alt="doctor holding tablet"
-          height="500"
-          class="mt-5"
-        />
+        <picture>
+          <source
+            srcset="@/assets/webp/medium-shot-doctor-holding-tablet.webp"
+            type="image/webp"
+          />
+          <source
+            srcset="@/assets/medium-shot-doctor-holding-tablet.png"
+            type="image/png"
+          />
+          <img
+            src="@/assets/medium-shot-doctor-holding-tablet.png"
+            alt="doctor holding tablet"
+            height="500"
+            class="mt-5"
+          />
+        </picture>
       </template>
     </Section>
     <Section heading="Awards">
@@ -58,12 +82,19 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card border-white shado-sm p-1">
-              <img
-                src="https://www.intime.digital/static/landing/img/award_1_1.png"
-                class="card-img-top my-2"
-                width="300"
-                alt="award1"
-              />
+              <picture>
+                <source
+                  srcset="@/assets/webp/award_1_1.webp"
+                  type="image/webp"
+                />
+                <source srcset="@/assets/award_1_1.png" type="image/png" />
+                <img
+                  src="@/assets/award_1_1.png"
+                  class="card-img-top my-2"
+                  width="300"
+                  alt="award1"
+                />
+              </picture>
               <div class="card-body">
                 <h5 class="card-title">Biotechnology Award</h5>
                 <p class="card-text">
@@ -76,12 +107,16 @@
           </div>
           <div class="col-md-4">
             <div class="card border-white shado-sm p-1">
-              <img
-                src="https://www.intime.digital/static/landing/img/award_2.png"
-                class="card-img-top my-2"
-                width="300"
-                alt="award2"
-              />
+              <picture>
+                <source srcset="@/assets/webp/award_2.webp" type="image/webp" />
+                <source srcset="@/assets/award_2.png" type="image/png" />
+                <img
+                  src="@/assets/award_2.png"
+                  class="card-img-top my-2"
+                  width="300"
+                  alt="award2"
+                />
+              </picture>
               <div class="card-body">
                 <h5 class="card-title">Health & Pharmaceutical Award</h5>
                 <p class="card-text">
@@ -94,11 +129,18 @@
           </div>
           <div class="col-md-4">
             <div class="card border-white shado-sm p-1">
-              <img
-                src="https://www.intime.digital/static/landing/img/award_3_1.png"
-                class="card-img-top my-2"
-                alt="award3"
-              />
+              <picture>
+                <source
+                  srcset="@/assets/webp/award_3_1.webp"
+                  type="image/webp"
+                />
+                <source srcset="@/assets/award_3_1.png" type="image/png" />
+                <img
+                  src="@/assets/award_3_1.png"
+                  class="card-img-top my-2"
+                  alt="award3"
+                />
+              </picture>
               <div class="card-body">
                 <h5 class="card-title">Private Healthcare Award</h5>
                 <p class="card-text">
@@ -140,12 +182,19 @@
         />
       </template>
       <template v-slot:col2>
-        <img
-          src="@/assets/18837903-cropped.png"
-          height="600"
-          class="mt-5"
-          alt="hand holding a mobile phone"
-        />
+        <picture>
+          <source
+            srcset="@/assets/webp/18837903-cropped.webp"
+            type="image/webp"
+          />
+          <source srcset="@/assets/18837903-cropped.png" type="image/png" />
+          <img
+            src="@/assets/18837903-cropped.png"
+            height="600"
+            class="mt-5"
+            alt="hand holding a mobile phone"
+          />
+        </picture>
       </template>
     </Section>
     <Section heading="Our" highlight="Mission" class="bg-light">
@@ -169,7 +218,6 @@
       <template>
         <agile :autoplay="true" :autoplaySpeed="5000">
           <div class="slide">
-            <LazyComponent>
             <iframe
               src="https://www.youtube.com/embed/xQytP22d3sA"
               title="YouTube video player"
@@ -177,11 +225,9 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-            </LazyComponent>
           </div>
 
           <div class="slide">
-            <LazyComponent>
             <iframe
               src="https://www.youtube.com/embed/1TEYTNI9UEo"
               title="YouTube video player"
@@ -189,10 +235,8 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-            </LazyComponent>
           </div>
           <div class="slide">
-            <LazyComponent>
             <iframe
               src="https://www.youtube.com/embed/TsA4SHhUzt4"
               title="YouTube video player"
@@ -200,10 +244,8 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-            </LazyComponent>
           </div>
           <div class="slide">
-            <LazyComponent>
             <iframe
               src="https://www.youtube.com/embed/IEz1P4i1P7s"
               title="YouTube video player"
@@ -211,10 +253,8 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-            </LazyComponent>
           </div>
           <div class="slide">
-            <LazyComponent>
             <iframe
               src="https://www.youtube.com/embed/yefzqDpJ5Oc"
               title="YouTube video player"
@@ -222,13 +262,17 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-            </LazyComponent>
           </div>
         </agile>
       </template>
     </Section>
     <Footer id="contact" class="bg-light" />
-    <a href="#about" type="button" class="btn btn-outline-primary d-block to-top" v-smooth-scroll>
+    <a
+      href="#about"
+      type="button"
+      class="btn btn-outline-primary d-block to-top"
+      v-smooth-scroll
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -250,6 +294,7 @@
 import Navbar from "./components/Navbar.vue";
 import Section from "./components/Section.vue";
 import Footer from "./components/Footer.vue";
+import lazyframe from "lazyframe";
 
 export default {
   name: "App",
@@ -257,6 +302,12 @@ export default {
     Navbar,
     Section,
     Footer,
+  },
+  beforeMount() {
+    lazyframe(".slide", {
+      debounce: 250,
+      lazyload: true,
+    });
   },
 };
 </script>
