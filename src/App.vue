@@ -71,7 +71,7 @@
           <img
             src="@/assets/medium-shot-doctor-holding-tablet.png"
             alt="doctor holding tablet"
-            height="500"
+            height="455"
             class="mt-5"
           />
         </picture>

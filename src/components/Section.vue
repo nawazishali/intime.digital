@@ -16,7 +16,7 @@
         class="row align-items-center"
         :class="{ 'flex-row-reverse': reverse }"
       >
-        <div class="col-lg-6 p-0 text-left">
+        <div class="col-lg-6 p-2 text-left">
           <h1 class="my-5">
             {{ heading }}
             <span class="blue">{{ highlight }}</span>
